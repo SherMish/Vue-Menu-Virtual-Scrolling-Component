@@ -1,28 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Virtual Scrolling Component</h1>
+  <virtual-scroll v-bind:arr_prop="arr"></virtual-scroll>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import VirtualScroll from './components/VirtualScroll.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    VirtualScroll
+  },
+
+  data() {
+    return {
+        arr: ["FOO1","FOO2","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO","FOO00","FOO001"]
+        }
+    },
 }
+
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
